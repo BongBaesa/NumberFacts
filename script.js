@@ -5,7 +5,7 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     const loadText = "Pending....";
     factDiv.innerHTML = loadText;
-    const baseURL = "http://numbersapi.com/";
+    const baseURL = "//numbersapi.com/";
     const number = e.target.querySelector('input[type="number"]').value;
     fetch(baseURL + number, {
         headers: {
