@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+  /*  background-color:  #204051;  */
+    background-image: url("./images/digits-backdrop.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFF2F2;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+section{
+    width: 100%;
+}
+
+.container{
+    width: 90%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+form, .number-fact{
+    width: 100%;
+    background-color: #645CBB;
+    padding: 20px;
+    border-radius: 8px;
+    opacity: 88%;
+}
+
+input[type="number"]{
+    width: 70%;
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    background-color:  #A084DC;
+    font-size: 20px;
+    color: #FFF2F2;
+    padding-left: 10px;
+}
+
+input[type="number"]::placeholder{
+    font-size: 20px;
+    font-family: "Times New Roman";
+    font-weight: 400;
+    color: #FFF2F2;
+}
+
+button{
+    display: inline-block;
+    width: 25%;
+    font-size: 20px;
+    height: 40px;
+    background-color: #A084DC;
+    color: #FFF2F2;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 4px;
+    font-family: "Times New Roman";
+}
+
+button:hover{
+    background-color: #BFACE2;
+    transform: scale(.9);
+}
+.number-fact{
+    margin-top: 20px;
+    height: auto;
+    font-size: 20px;
+}
+
+@media only screen and (max-width:678px){
+    form button{
+        font-size: 18px
+    }
+}
